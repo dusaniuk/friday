@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    ~/.config/nvim/init.vim:
+      create: true
+      path: nvim/init.vim
+
+- brewfile:
+    - Brewfile
+
+# Cleaning up:
+- shell:
+    - [brew cleanup, Cleaning up]
