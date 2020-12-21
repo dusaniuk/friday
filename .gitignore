@@ -12,3 +12,6 @@ config/nvim/autoload/plug.vim
 backup/
 *.log
 .DS_Store
+
+/nvim/autoload
+
