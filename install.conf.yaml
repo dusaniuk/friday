@@ -11,6 +11,8 @@
     ~/.config/nvim/init.vim:
       create: true
       path: nvim/init.vim
+    ~/Library/Preferences/com.googlecode.iterm2.plist:
+      path: iterm/com.googlecode.iterm2.plist
 
 - brewfile:
     - Brewfile
