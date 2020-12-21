@@ -67,6 +67,12 @@ nmap ga <Plug>(EasyAlign)
 " Align markdown table
 au FileType markdown vmap <Leader>= :EasyAlign*<Bar><Enter>
 
+" === Nerdtree shorcuts === "
+"  <leader>n - Toggle NERDTree on/off
+"  <leader>f - Opens current file location in NERDTree
+nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>f :NERDTreeFind<CR>
+
 "   <Space> - PageDown
 "   -       - PageUp
 noremap <Space> <PageDown>
@@ -98,10 +104,6 @@ nmap <silent> <leader>/ :nohlsearch<CR>
 "   <leader>y - Automatically remove trailing whitespace
 nmap <leader>y :StripWhitespace<CR>
 
-" === vim-jsdoc shortcuts ==="
-" Generate jsdoc for function under cursor
-nmap <leader>z :JsDoc<CR>
-
 " Delete current visual selection and dump in black hole buffer before pasting
 " Used when you want to paste over something without it getting copied to
 " Vim's default buffer
@@ -126,6 +128,76 @@ inoremap <silent><expr> <TAB>
 "Close preview window when completion is done.
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
+" === NeoSnippet === "
+" Map <C-k> as shortcut to activate snippet if available
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+smap <C-k> <Plug>(neosnippet_expand_or_jump)
+xmap <C-k> <Plug>(neosnippet_expand_target)
+
+" Load custom snippets from snippets folder
+let g:neosnippet#snippets_directory='~/.config/nvim/snippets'
+
+" Hide conceal markers
+let g:neosnippet#enable_conceal_markers = 0
+
+" === NERDTree === "
+" Show hidden files/directories
+let g:NERDTreeShowHidden = 1
+
+" Remove bookmarks and help text from NERDTree
+let g:NERDTreeMinimalUI = 1
+
+" Custom icons for expandable/expanded directories
+let g:NERDTreeDirArrowExpandable = '?'
+let g:NERDTreeDirArrowCollapsible = '?'
+
+" Hide certain files and directories from NERDTree
+let g:NERDTreeIgnore = ['^\.DS_Store$', '^tags$', '\.git$[[dir]]', '\.idea$[[dir]]', '\.sass-cache$']
+
+" Wrap in try/catch to avoid errors on initial install before plugin is available
+try
+
+" === Vim airline ==== "
+" Enable extensions
+let g:airline_extensions = ['branch', 'hunks', 'coc']
+
+" Update section z to just have line number
+let g:airline_section_z = airline#section#create(['linenr'])
+
+" Do not draw separators for empty sections (only for the active window) >
+let g:airline_skip_empty_sections = 1
+
+" Smartly uniquify buffers names with similar filename, suppressing common parts of paths.
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+" Custom setup that removes filetype/whitespace from default vim airline bar
+let g:airline#extensions#default#layout = [['a', 'b', 'c'], ['x', 'z', 'warning', 'error']]
+
+" Customize vim airline per filetype
+" 'nerdtree'  - Hide nerdtree status line
+" 'list'      - Only show file type plus current line number out of total
+let g:airline_filetype_overrides = {
+  \ 'nerdtree': [ get(g:, 'NERDTreeStatusline', ''), '' ],
+  \ 'list': [ '%y', '%l/%L'],
+  \ }
+
+" Enable powerline fonts
+let g:airline_powerline_fonts = 1
+
+" Enable caching of syntax highlighting groups
+let g:airline_highlighting_cache = 1
+
+" Define custom airline symbols
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+" Don't show git changes to current file in airline
+let g:airline#extensions#hunks#enabled=0
+
+catch
+  echo 'Airline not installed. It should work after running :PlugInstall'
+endtry
 
 " === echodoc === "
 " Enable echodoc on startup
