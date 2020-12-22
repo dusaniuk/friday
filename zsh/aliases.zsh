@@ -13,3 +13,8 @@ alias top="vtop --theme monokai  --no-mouse"
 # neovim
 alias vim="nvim"
 alias vv="nvim ."
+
+# webstorm
+alias ws="webstorm"
+alias wss="webstorm ."
+
