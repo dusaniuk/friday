@@ -15,3 +15,5 @@ backup/
 
 /nvim/autoload
 
+# Ignore compiled zsh files
+*.zwc
