@@ -8,6 +8,7 @@
     - [git submodule update --init --recursive, Installing submodules]
 
 - link:
+    ~/.zshrc: zsh/.zshrc
     ~/.config/nvim/init.vim:
       create: true
       path: nvim/init.vim
