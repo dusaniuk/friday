@@ -5,6 +5,7 @@ antigen use oh-my-zsh
 
 # add plugins from the default repo (oh-my-zsh)
 antigen bundle git
+antigen bundle pyenv
 antigen bundle heroku
 antigen bundle command-not-found
 

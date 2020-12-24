@@ -34,11 +34,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Denite - Fuzzy finding, buffer management
-Plug 'Shougo/denite.nvim'
-
-" Snippet support
-Plug 'Shougo/neosnippet'
-Plug 'Shougo/neosnippet-snippets'
+Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Print function signatures in echo area
 Plug 'Shougo/echodoc.vim'
@@ -46,7 +42,6 @@ Plug 'Shougo/echodoc.vim'
 " === Git Plugins === "
 " Enable git changes to be shown in sign column
 Plug 'mhinz/vim-signify'
-Plug 'tpope/vim-fugitive'
 
 " === Javascript Plugins === "
 " Typescript syntax highlighting
@@ -81,12 +76,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
-" Markdown Preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
-
-" an aligment tool (using for markdown tables primarly)
+" An aligment tool (using for markdown tables primarly)
 Plug 'junegunn/vim-easy-align'
 
-
+Plug 'ashisha/image.vim'
 " Initialize plugin system
 call plug#end()
