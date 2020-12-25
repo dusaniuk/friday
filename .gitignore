@@ -17,3 +17,7 @@ backup/
 
 # Ignore compiled zsh files
 *.zwc
+
+# JetBrains stuff
+/.idea
+

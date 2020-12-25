@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/cask-fonts": {
-        "revision": "c07c9dfcbfe5e43b83600d7f91d76095af345aa9"
+        "revision": "9aa621c54cf47b4d48f0332bcc07fabd5f217524"
       }
     },
     "brew": {
@@ -98,7 +98,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.7.0",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "280540373af9c71c2d77950d008b235b26af9779",
+        "Homebrew/homebrew-core": "6d9c7da221905268eddd6da83091fd2478cd1d10",
         "CLT": "11.0.33.17",
         "Xcode": "12.3",
         "macOS": "10.15.7"

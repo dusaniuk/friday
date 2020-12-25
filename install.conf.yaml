@@ -9,6 +9,7 @@
 
 - link:
     ~/.zshrc: zsh/.zshrc
+    ~/.ideavimrc: jetbrains/.ideavimrc
     ~/.config/nvim/init.vim:
       create: true
       path: nvim/init.vim
