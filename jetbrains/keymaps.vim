@@ -15,7 +15,7 @@ nnoremap <C-h> <C-W>h
 nnoremap <C-l> <C-W>l
 
 " easy navigate to all word beginigns in two directions
-map <Leader>ss <Plug>(easymotion-bd-w)
+map <Leader>w <Plug>(easymotion-bd-w)
 
 " go to line even if numbers is not displayed
 map <Leader>j <Plug>(easymotion-j)
