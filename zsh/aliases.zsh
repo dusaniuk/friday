@@ -18,3 +18,5 @@ alias vv="nvim ."
 alias ws="webstorm"
 alias wss="webstorm ."
 
+# js playground
+alias jspg="code ~/dev/jsPlayground/"
