@@ -79,6 +79,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " An aligment tool (using for markdown tables primarly)
 Plug 'junegunn/vim-easy-align'
 
-Plug 'ashisha/image.vim'
+" Commonly used tool for programming
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
 " Initialize plugin system
 call plug#end()
