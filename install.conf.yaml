@@ -21,4 +21,6 @@
 
 # Cleaning up:
 - shell:
+    - [bash ./node/install.sh, Installing NodeJS and required packages]
+
     - [brew cleanup, Cleaning up]
