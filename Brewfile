@@ -4,6 +4,7 @@ brew "lolcat"
 brew "neovim", args: ["HEAD"]
 brew "nodenv"
 brew "zsh"
+brew "pyenv"
 
 cask "ableton-live"
 cask "blackhole-2ch"
