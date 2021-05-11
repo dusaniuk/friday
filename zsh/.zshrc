@@ -1,6 +1,8 @@
 # welcome me
 figlet "Welcome back, Mr Yaro" | lolcat
 
+eval "$(nodenv init -)"
+
 source "$HOME/friday/zsh/aliases.zsh"
 source "$HOME/friday/zsh/plugins.zsh"
 source "$HOME/friday/zsh/exports.zsh"

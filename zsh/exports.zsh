@@ -13,7 +13,7 @@ export NVM_DIR="$HOME/.nvm"
 # ZSH_THEME="spaceship"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/dusaniuk/.oh-my-zsh"
+export ZSH="/Users/yaroslav/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 # If you come from bash you might have to change your $PATH.

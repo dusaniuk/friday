@@ -5,8 +5,9 @@ brew "neovim", args: ["HEAD"]
 brew "nodenv"
 brew "zsh"
 brew "pyenv"
+brew "figlet"
 
-cask "ableton-live"
+cask "visual-studio-code"
 cask "blackhole-2ch"
 cask "rectangle"
 cask "obsidian"
