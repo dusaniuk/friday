@@ -20,3 +20,11 @@ alias wss="webstorm ."
 
 # js playground
 alias jspg="code ~/dev/jsPlayground/"
+
+# lazy plugins
+alias lzd="lazydocker"
+alias lzg="lazygit"
+
+# postgres commands
+alias pg_start="launchctl load ~/Library/LaunchAgents"
+alias pg_stop="launchctl unload ~/Library/LaunchAgents"

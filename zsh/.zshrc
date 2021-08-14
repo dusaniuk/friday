@@ -1,6 +1,7 @@
 # welcome me
 figlet "Welcome back, Mr Yaro" | lolcat
 
+eval "$(pyenv init -)"
 eval "$(nodenv init -)"
 
 source "$HOME/friday/zsh/aliases.zsh"

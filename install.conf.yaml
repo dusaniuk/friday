@@ -9,6 +9,8 @@
 
 - link:
     ~/.zshrc: zsh/.zshrc
+    ~/.direnvrc: python/.direnvrc
+    ~/.huskyrc: node/.huskyrc
     ~/.ideavimrc: jetbrains/.ideavimrc
     ~/.config/nvim/init.vim:
       create: true
