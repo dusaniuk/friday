@@ -1,6 +1,10 @@
 # welcome me
 figlet "Welcome back, Mr Yaro" | lolcat
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
 source "$HOME/friday/zsh/aliases.zsh"
 source "$HOME/friday/zsh/plugins.zsh"
 source "$HOME/friday/zsh/exports.zsh"
