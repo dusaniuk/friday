@@ -16,3 +16,5 @@ git submodule update --init --recursive "${DOTBOT_DIR}"
   --verbose \
   --plugin-dir deps/dotbot-brew \
   -c "${CONFIG}" "${@}"
+
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
