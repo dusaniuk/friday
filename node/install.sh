@@ -1,11 +1,6 @@
 NODE_VERSION=14.15.1
 
-nodenv install "${NODE_VERSION}"
-nodenv global "${NODE_VERSION}"
-npm install -g yarn
+nvm install "${NODE_VERSION}"
+nvm global "${NODE_VERSION}"
 
-nodenv rehash
-
-yarn global add markmap-cli
-
-nodenv rehash
+npm global add markmap-cli

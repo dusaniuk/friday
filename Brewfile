@@ -5,7 +5,7 @@ brew "lazygit"
 brew "lolcat"
 brew "mitmproxy"
 brew "neovim", args: ["HEAD"]
-brew "nodenv"
+brew "nvm"
 brew "pyenv"
 brew "ripgrep"
 brew "zsh"
