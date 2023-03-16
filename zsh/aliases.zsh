@@ -22,3 +22,4 @@ alias wss="webstorm ."
 alias jspg="code ~/dev/jsPlayground/"
 
 alias lzg="lazygit"
+alias lzd="lazydocker"
