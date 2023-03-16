@@ -14,3 +14,6 @@ source "$HOME/friday/zsh/exports.zsh"
 # probably there's a way to avoid that, gotta look into that
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+# Created by `pipx` on 2022-12-14 20:43:39
+export PATH="$PATH:/Users/yaroslavdusaniuk/.local/bin"
