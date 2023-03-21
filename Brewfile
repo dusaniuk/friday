@@ -1,8 +1,6 @@
 tap "homebrew/cask-fonts"
 
-brew "figlet"
 brew "lazygit"
-brew "lolcat"
 brew "mitmproxy"
 brew "neovim", args: ["HEAD"]
 brew "nvm"
