@@ -1,16 +1,36 @@
+### Exports
+
+# Use Pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-
 eval "$(pyenv init --path)"
 
-source "$HOME/friday/zsh/aliases.zsh"
-source "$HOME/friday/zsh/plugins.zsh"
-source "$HOME/friday/zsh/exports.zsh"
+# Use NVM
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-# oh my zsh source should be included after all env variables are set up
-# probably there's a way to avoid that, gotta look into that
+### Aliases
 
-export PATH="$HOME/.poetry/bin:$PATH"
+# Neovim
+alias vim="nvim"
+alias vv="nvim ."
 
-# Created by `pipx` on 2022-12-14 20:43:39
-export PATH="$PATH:/Users/yaroslavdusaniuk/.local/bin"
+# Lazy tools
+alias lzg="lazygit"
+alias lzd="lazydocker"
+
+### Antigen
+
+# Use antigen plugin manager
+source $HOME/friday/deps/antigen/antigen.zsh
+
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle pyenv
+antigen bundle command-not-found
+
+antigen theme agnoster 
+
+antigen apply
