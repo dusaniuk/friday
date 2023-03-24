@@ -6,7 +6,6 @@ brew "neovim", args: ["HEAD"]
 brew "nvm"
 brew "pyenv"
 brew "ripgrep"
-brew "zsh"
 
 cask "alfred"
 cask "docker"
