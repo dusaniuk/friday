@@ -18,9 +18,6 @@ alias vv="nvim ."
 alias ws="webstorm"
 alias wss="webstorm ."
 
-# js playground
-alias jspg="code ~/dev/jsPlayground/"
-
 # lazy plugins
 alias lzd="lazydocker"
 alias lzg="lazygit"
@@ -28,3 +25,13 @@ alias lzg="lazygit"
 # postgres commands
 alias pg_start="launchctl load ~/Library/LaunchAgents"
 alias pg_stop="launchctl unload ~/Library/LaunchAgents"
+
+
+# active projects
+alias twg="cd ~/tg/www.twingate.com"
+
+# push admin to staging
+alias pushstg='git push --force-with-lease origin develop:staging'
+
+# make a stack commit with graphite
+alias gstack="gt bc -am"

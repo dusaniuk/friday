@@ -12,9 +12,8 @@
     ~/.direnvrc: python/.direnvrc
     ~/.huskyrc: node/.huskyrc
     ~/.ideavimrc: jetbrains/.ideavimrc
-    ~/.config/nvim/init.vim:
-      create: true
-      path: nvim/init.vim
+    ~/.config/nvim: nvim
+    ~/.tmux.conf: tmux/tmux.conf
     ~/Library/Preferences/com.googlecode.iterm2.plist:
       path: iterm/com.googlecode.iterm2.plist
 

@@ -10,6 +10,6 @@ antigen bundle heroku
 antigen bundle command-not-found
 
 # cool spaceship theme for zsh
-antigen theme denysdovhan/spaceship-prompt
+antigen theme kphoen 
 
 antigen apply
